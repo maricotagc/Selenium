@@ -15,6 +15,8 @@ It is an API which emulates browsers using the Selenium server. Each browser has
 
 ### Declaration
 
+[Code Example](/codeExamples/WebdriverDeclaration.java)
+
 ### Locators
 ![](/images/locators1.jpg)
 
