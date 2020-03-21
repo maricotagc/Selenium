@@ -26,4 +26,5 @@ It is an API which emulates browsers using the Selenium server. Each browser has
 2. [Clicking on an element](/codeExamples/Click.java)
 3. [Navigation to URL](/codeExamples/Navigation.java)
 4. [Other Examples](https://www.selenium.dev/documentation/en/webdriver/browser_manipulation/)
+5. [Expect Conditions](https://www.selenium.dev/selenium/docs/api/java/org/openqa/selenium/support/ui/ExpectedConditions.html)
 
