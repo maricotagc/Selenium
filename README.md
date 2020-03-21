@@ -1,5 +1,5 @@
 # Selenium
-My notes regarding Selenium framework
+My notes regarding Selenium framework which automates web browser testing.
 
 [Selenium Official GitHub](https://github.com/SeleniumHQ)
 
