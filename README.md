@@ -13,6 +13,8 @@ It is an API which emulates browsers using the Selenium server. Each browser has
 * [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/)
 * [WebDriver Official Documentation](https://www.w3.org/TR/webdriver1/)
 
+### Declaration
+
 ### Locators
 ![](/images/locators1.jpg)
 
