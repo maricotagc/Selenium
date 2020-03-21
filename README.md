@@ -22,12 +22,6 @@ It is an API which emulates browsers using the Selenium server. Each browser has
 
 ### Frequent Actions
 
-#### Set an element’s text
-```java
-String name = "Mariana Moita";
-driver.findElement(By.name("name")).sendKeys(name);
-```
-#### Clicking
-```java
-driver.findElement(By.id("login")).click();
-```
+1. [Set an element’s text](/codeExamples/SetElementText.java)
+2. [Clicking on an element](/codeExamples/Click.java.java)
+
