@@ -5,7 +5,7 @@ My notes regarding Selenium framework which automates web browser testing.
 
 [Selenium Installation](https://www.selenium.dev/documentation/en/selenium_installation/)
 
-[Selenium API Documentation](https://www.selenium.dev/selenium/docs/api/java/)
+[Selenium API Documentation](https://www.selenium.dev/selenium/docs/api/java/): Commands to manipulate WebDriver.
 
 ## Webdriver
 
