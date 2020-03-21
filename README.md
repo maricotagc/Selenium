@@ -23,5 +23,5 @@ driver.findElement(By.name("name")).sendKeys(name);
 ```
 #### Clicking
 ```java
-river.findElement(By.id("login")).click();
+driver.findElement(By.id("login")).click();
 ```
