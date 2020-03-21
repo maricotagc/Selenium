@@ -11,4 +11,4 @@ It is an API which emulates browsers. Each browser has its own driver (Chrome, F
 * [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/)
 
 ### Locators
-
+![](/images/locators1.jpg)
