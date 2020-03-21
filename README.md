@@ -29,4 +29,5 @@ It is an API which emulates browsers using the Selenium server. Each browser has
 5. [Expect Conditions -Explicit](https://www.selenium.dev/selenium/docs/api/java/org/openqa/selenium/support/ui/ExpectedConditions.html)
 6. [Expect Conditions -Implicit](/codeExamples/ImplicityWait.java)
 7. [Keyboard Actions](https://www.selenium.dev/documentation/en/webdriver/keyboard/)
+8. [Reading Element's Value]()
 
