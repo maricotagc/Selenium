@@ -23,5 +23,5 @@ It is an API which emulates browsers using the Selenium server. Each browser has
 ### Frequent Actions
 
 1. [Set an element’s text](/codeExamples/SetElementText.java)
-2. [Clicking on an element](/codeExamples/Click.java.java)
+2. [Clicking on an element](/codeExamples/Click.java)
 
