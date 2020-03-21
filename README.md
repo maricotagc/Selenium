@@ -7,8 +7,21 @@ My notes regarding Selenium framework which automates web browser testing.
 
 ## Webdriver
 
-It is an API which emulates browsers. Each browser has its own driver (Chrome, FireFox, Safari, etc).
+It is an API which emulates browsers using the Selenium server. Each browser has its own driver (Chrome, FireFox, Safari, etc).
 * [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/)
+* [WebDriver Official Documentation](https://www.w3.org/TR/webdriver1/)
 
 ### Locators
 ![](/images/locators1.jpg)
+
+### Frequent Actions
+
+#### Set an element’s text
+```java
+String name = "Mariana Moita";
+driver.findElement(By.name("name")).sendKeys(name);
+```
+#### Clicking
+```java
+river.findElement(By.id("login")).click();
+```
