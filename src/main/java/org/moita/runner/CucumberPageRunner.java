@@ -1,6 +1,5 @@
 package org.moita.runner;
 
-import org.moita.utilities.DriverFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -8,14 +7,12 @@ import static org.moita.utilities.Config.*;
 
 public class CucumberPageRunner {
 
-    WebDriver driver;
+    private WebDriver driver;
 
-    //TODO constructor
     public CucumberPageRunner(WebDriver driver) {
         this.driver = driver;
     }
 
-    //TODO login method
     public void login() {
 //        WebDriver driver = DriverFactory.create();
         CucumberPageElements elements = new CucumberPageElements(driver);
@@ -39,7 +36,6 @@ public class CucumberPageRunner {
         passwordNextButton.click();
     }
 
-    //TODO getUserName method
     public String getUserName() {
         CucumberPageElements elements = new CucumberPageElements(driver);
 
