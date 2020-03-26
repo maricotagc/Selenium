@@ -1,55 +1,62 @@
 package org.moita.runner;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import static org.moita.utilities.Config.*;
+import static org.moita.utilities.Config.EMAIL;
+import static org.moita.utilities.Config.PASSWORD;
 
 public class CucumberPageRunner {
 
-    private WebDriver driver;
+    private CucumberPageElements cucumberPageElements;
 
-    public CucumberPageRunner(WebDriver driver) {
-        this.driver = driver;
+    public CucumberPageRunner(CucumberPageElements cucumberPageElements) {
+        this.cucumberPageElements = cucumberPageElements;
     }
 
     public void login() {
-//        WebDriver driver = DriverFactory.create();
-        CucumberPageElements elements = new CucumberPageElements(driver);
 
-        WebElement cucumberLogin = elements.titleButton();
+        WebElement cucumberLogin = cucumberPageElements.titleButton();
         cucumberLogin.click();
 
-        WebElement googleLogin = elements.googleLoginButton();
+        WebElement googleLogin = cucumberPageElements.googleLoginButton();
         googleLogin.click();
 
-        WebElement googleUser = elements.googleUser();
+        WebElement googleUser = cucumberPageElements.googleUser();
         googleUser.sendKeys(EMAIL);
 
-        WebElement emailNextButton = elements.emailNextButton();
+        WebElement emailNextButton = cucumberPageElements.emailNextButton();
         emailNextButton.click();
 
-        WebElement googlePassword = elements.googlePassword();
+        WebElement googlePassword = cucumberPageElements.googlePassword();
         googlePassword.sendKeys(PASSWORD);
 
-        WebElement passwordNextButton = elements.passwordNextButton();
+        WebElement passwordNextButton = cucumberPageElements.passwordNextButton();
         passwordNextButton.click();
     }
 
-    public String getUserName() {
-        CucumberPageElements elements = new CucumberPageElements(driver);
-
-        WebElement closeWelcomePanel = elements.closeWelcomePanelButton();
+    public void navigateToUserProfile() {
+        WebElement closeWelcomePanel = cucumberPageElements.closeWelcomePanelButton();
         closeWelcomePanel.click();
 
-        WebElement userSection = elements.userSection();
+        WebElement userSection = cucumberPageElements.userSection();
         userSection.click();
 
-        WebElement profileSection = elements.profileSection();
+        WebElement profileSection = cucumberPageElements.profileSection();
         profileSection.click();
+    }
 
-        WebElement userNameField = elements.userName();
+    public String getUserName() {
+
+        WebElement userNameField = cucumberPageElements.userName();
+
         return userNameField.getAttribute("value");
+    }
+
+    public String getUserRole() {
+
+        WebElement userRole = cucumberPageElements.userRole();
+
+        return userRole.getAttribute("value");
     }
 
 }

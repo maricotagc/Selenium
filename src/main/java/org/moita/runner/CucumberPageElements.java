@@ -39,7 +39,7 @@ public class CucumberPageElements {
     }
 
     public WebElement closeWelcomePanelButton() {
-        return driver.findElement(By.className("ht-icon--cross"));
+       return driver.findElement(By.className("ht-icon--cross"));
     }
 
     public WebElement userSection() {
@@ -52,5 +52,9 @@ public class CucumberPageElements {
 
     public WebElement userName() {
         return driver.findElement(By.id("profile-name"));
+    }
+
+    public WebElement userRole() {
+        return driver.findElement(By.className("ht-select"));
     }
 }
