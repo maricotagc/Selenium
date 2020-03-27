@@ -4,8 +4,8 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.moita.runner.CucumberPageElements;
-import org.moita.runner.CucumberPageRunner;
+import org.moita.cucumberPage.runner.CucumberPageElements;
+import org.moita.cucumberPage.runner.CucumberPageRunner;
 import org.moita.utilities.DriverFactory;
 import org.openqa.selenium.WebDriver;
 

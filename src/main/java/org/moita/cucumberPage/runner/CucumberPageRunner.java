@@ -1,5 +1,6 @@
-package org.moita.runner;
+package org.moita.cucumberPage.runner;
 
+import org.moita.utilities.InputManipulator;
 import org.openqa.selenium.WebElement;
 
 import static org.moita.utilities.Config.EMAIL;
@@ -48,14 +49,13 @@ public class CucumberPageRunner {
     public String getUserName() {
 
         WebElement userNameField = cucumberPageElements.userName();
-
-        return userNameField.getAttribute("value");
+        InputManipulator input = new InputManipulator(userNameField);
+        return input.readElement();
     }
 
     public String getUserRole() {
 
         WebElement userRole = cucumberPageElements.userRole();
-
         return userRole.getAttribute("value");
     }
 

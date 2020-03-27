@@ -1,4 +1,4 @@
-package org.moita.runner;
+package org.moita.cucumberPage.runner;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
