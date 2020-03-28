@@ -1,5 +1,6 @@
 package org.moita.utilities;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 
 public class InputManipulator {
@@ -10,12 +11,15 @@ public class InputManipulator {
         this.element = element;
     }
 
-    public String readElement() {
+    public String readInputElement() {
         return element.getAttribute("value");
     }
 
-    public void updateElement(String value) {
+    public void updateInputElement(String value) {
         element.sendKeys(value);
     }
 
+    public void clearInputElement() {
+        element.clear();
+    }
 }

@@ -41,6 +41,19 @@ public class CucumberPageRunnerTest {
     }
 
     @Test
+    public void shouldSetUserName() {
+        // given
+        String expectedUserName = "Mariana Moita";
+
+        // when
+        test.setUserName("Mariana Moita");
+        String userName = test.getUserName();
+
+//        // then
+        Assert.assertEquals(expectedUserName, userName);
+    }
+
+    @Test
     public void shouldReturnUserRoleNull() {
 
         //given
