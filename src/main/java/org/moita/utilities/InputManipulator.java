@@ -1,6 +1,5 @@
 package org.moita.utilities;
 
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 
 public class InputManipulator {
