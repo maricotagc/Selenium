@@ -1,4 +1,4 @@
-package org.moita.cucumberPage.runner;
+package org.moita.cucumberPage;
 
 import org.moita.utilities.InputManipulator;
 import org.openqa.selenium.WebElement;
