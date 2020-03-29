@@ -57,4 +57,20 @@ public class CucumberPageElements {
     public WebElement userRoleDropdown() {
         return driver.findElement(By.className("ht-select"));
     }
+
+    public WebElement changePasswordLink() {
+        return driver.findElement(By.linkText("Change email or password"));
+    }
+
+    public WebElement newPasswordInputField() {
+        return driver.findElement(By.id("user_password"));
+    }
+
+    public WebElement currentPasswordInputField() {
+        return driver.findElement(By.id("user_current_password"));
+    }
+
+    public WebElement updateUserButton() {
+        return driver.findElement(By.className("ht-btn--main-action"));
+    }
 }

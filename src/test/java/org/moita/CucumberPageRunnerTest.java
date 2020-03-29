@@ -7,6 +7,7 @@ import org.junit.Test;
 import org.moita.cucumberPage.CucumberPageElements;
 import org.moita.cucumberPage.CucumberPageRunner;
 import org.moita.utilities.DriverFactory;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class CucumberPageRunnerTest {
@@ -22,10 +23,10 @@ public class CucumberPageRunnerTest {
         this.test.navigateToUserProfile();
     }
 
-    @After
-    public void setDown() {
-        this.driver.close();
-    }
+//    @After
+//    public void setDown() {
+//        this.driver.close();
+//    }
 
     @Test
     public void shouldReturnUserName() {
@@ -77,5 +78,21 @@ public class CucumberPageRunnerTest {
 
         //then
         Assert.assertEquals(expectedNewUserRole, test.getUserRole());
+    }
+
+    @Test
+    public void shouldOpenPasswordUpdatePage() {
+        //given
+        String newPassword = "@Brasil2011";
+
+        //when
+        test.changeEmailOrPassword(newPassword, "@Brasil2010");
+//        System.out.println("VALOR DO CAMPO OLD PASSWORD: " + driver.findElement(By.id("user_current_password")).getText());
+
+        //then
+        Assert.assertEquals(newPassword, driver.findElement(By.id("user_current_password")).getText());
+
+        //TODO create new google account and sig up for cucumber for the first time m.aricotagc@gmail.com
+
     }
 }

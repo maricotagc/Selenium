@@ -67,4 +67,15 @@ public class CucumberPageRunner {
         WebElement dropdown = cucumberPageElements.userRoleDropdown();
         DropdownWebElementManipulator.select(dropdown, role);
     }
+
+    public void changeEmailOrPassword(String newPassword, String currentPassword) {
+        WebElement link = cucumberPageElements.changePasswordLink();
+        link.click();
+        WebElement newPasswordField = cucumberPageElements.newPasswordInputField();
+        InputWebElementManipulator.update(newPasswordField, newPassword);
+        WebElement currentPasswordField = cucumberPageElements.currentPasswordInputField();
+        InputWebElementManipulator.update(currentPasswordField, currentPassword);
+        WebElement updateUserButton = cucumberPageElements.updateUserButton();
+        updateUserButton.click();
+    }
 }
