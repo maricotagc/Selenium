@@ -49,15 +49,13 @@ public class CucumberPageRunner {
     public String getUserName() {
 
         WebElement userNameField = cucumberPageElements.userName();
-        InputManipulator input = new InputManipulator(userNameField);
-        return input.readInputElement();
+        return InputManipulator.readInputElement(userNameField);
     }
 
     public void setUserName(String userName) {
         WebElement userNameField = cucumberPageElements.userName();
-        InputManipulator input = new InputManipulator(userNameField);
-        input.clearInputElement();
-        input.updateInputElement(userName);
+//        InputManipulator.clearInputElement(userNameField);
+        InputManipulator.updateInputElement(userNameField, userName);
     }
 
     public String getUserRole() {

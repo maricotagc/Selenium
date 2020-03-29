@@ -43,10 +43,10 @@ public class CucumberPageRunnerTest {
     @Test
     public void shouldSetUserName() {
         // given
-        String expectedUserName = "Mariana Moita";
+        String expectedUserName = "Raphael Moita";
 
         // when
-        test.setUserName("Mariana Moita");
+        test.setUserName("Raphael Moita");
         String userName = test.getUserName();
 
 //        // then
