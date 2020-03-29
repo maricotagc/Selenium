@@ -54,10 +54,10 @@ public class CucumberPageRunnerTest {
     }
 
     @Test
-    public void shouldReturnUserRoleNull() {
+    public void shouldReturnCurrentUserRole() {
 
         //given
-        String expectedUserRole = "other";
+        String expectedUserRole = "qalead";
 
         //When
 

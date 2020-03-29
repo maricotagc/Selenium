@@ -1,5 +1,6 @@
 package org.moita.cucumberPage;
 
+import org.moita.utilities.DropdownWebElementManipulator;
 import org.moita.utilities.InputWebElementManipulator;
 import org.openqa.selenium.WebElement;
 
@@ -54,14 +55,14 @@ public class CucumberPageRunner {
 
     public void setUserName(String userName) {
         WebElement userNameField = cucumberPageElements.userName();
-//        InputWebElementManipulator.clearInputElement(userNameField);
         InputWebElementManipulator.update(userNameField, userName);
     }
 
     public String getUserRole() {
 
         WebElement userRole = cucumberPageElements.userRole();
-        return userRole.getAttribute("value");
+        return DropdownWebElementManipulator.get(userRole);
+//        return userRole.getAttribute("value");
     }
 
 }
