@@ -11,10 +11,10 @@ import static org.moita.utilities.Config.*;
 public class DriverFactory {
 
     public static WebDriver create() {
-        //Java set up which receives create to be used within the test and it's location
+        //Java select up which receives create to be used within the test and it's location
         System.setProperty(WEBDRIVER_CHROME_DRIVER,WEBDRIVER_CHROME_DRIVER_PATH);
 
-        //Selenium set up for executing test in specific browser language
+        //Selenium select up for executing test in specific browser language
         ChromeOptions options = new ChromeOptions();
         options.addArguments(LANG_EN);
 

@@ -1,6 +1,7 @@
 package org.moita.utilities;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 public class DropdownWebElementManipulator {
 
@@ -10,5 +11,9 @@ public class DropdownWebElementManipulator {
         return dropdown.getAttribute("value");
     }
 
-    //TODO method update
+    public static void select(WebElement dropdown, String role) {
+
+        Select roleDropDown = new Select(dropdown);
+        roleDropDown.selectByValue(role);
+    }
 }

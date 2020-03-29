@@ -59,10 +59,12 @@ public class CucumberPageRunner {
     }
 
     public String getUserRole() {
-
-        WebElement userRole = cucumberPageElements.userRole();
+        WebElement userRole = cucumberPageElements.userRoleDropdown();
         return DropdownWebElementManipulator.get(userRole);
-//        return userRole.getAttribute("value");
     }
 
+    public void selectUserRole(String role) {
+        WebElement dropdown = cucumberPageElements.userRoleDropdown();
+        DropdownWebElementManipulator.select(dropdown, role);
+    }
 }

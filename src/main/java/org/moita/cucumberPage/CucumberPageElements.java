@@ -54,7 +54,7 @@ public class CucumberPageElements {
         return driver.findElement(By.id("profile-name"));
     }
 
-    public WebElement userRole() {
+    public WebElement userRoleDropdown() {
         return driver.findElement(By.className("ht-select"));
     }
 }

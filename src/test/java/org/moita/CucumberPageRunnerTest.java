@@ -60,11 +60,22 @@ public class CucumberPageRunnerTest {
         String expectedUserRole = "qalead";
 
         //When
-
         String userRole = test.getUserRole();
 
         //Then
-
         Assert.assertEquals(expectedUserRole, userRole);
+    }
+
+    @Test
+    public void shouldUpdateUserRole() {
+
+        //given
+        String expectedNewUserRole = "pm";
+
+        //when
+        test.selectUserRole(expectedNewUserRole);
+
+        //then
+        Assert.assertEquals(expectedNewUserRole, test.getUserRole());
     }
 }
