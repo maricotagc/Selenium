@@ -79,5 +79,5 @@ public class CucumberPageRunner {
         updateUserButton.click();
     }
 
-    //TODO create new login method trhough cucumber credentials
+    //TODO create new login method through cucumber credentials
 }
