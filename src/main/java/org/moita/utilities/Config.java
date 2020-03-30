@@ -2,8 +2,8 @@ package org.moita.utilities;
 
 public class Config {
 
-    public static final String EMAIL = "maricotagc@gmail.com";
-    public static final String PASSWORD = "@Brasil2010";
+    public static final String EMAIL = "m.oita.automation@gmail.com";
+    public static final String PASSWORD = "@Rapha1977";
 
     public static final String LANG_EN = "--lang=en";
     public static final String WEBDRIVER_CHROME_DRIVER = "webdriver.chrome.driver";
