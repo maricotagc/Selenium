@@ -32,7 +32,7 @@ public class CucumberPageRunnerTest {
     public void shouldReturnUserName() {
 
         // given
-        String expectedUserName = "Mariana González Camargo";
+        String expectedUserName = "Automation Moita";
 
         // when
         String userName = test.getUserName();
@@ -44,13 +44,13 @@ public class CucumberPageRunnerTest {
     @Test
     public void shouldSetUserName() {
         // given
-        String expectedUserName = "Raphael Moita";
+        String expectedUserName = "Moita Auto Test";
 
         // when
-        test.setUserName("Raphael Moita");
+        test.setUserName("Moita Auto Test");
         String userName = test.getUserName();
 
-//        // then
+        // then
         Assert.assertEquals(expectedUserName, userName);
     }
 
@@ -83,16 +83,14 @@ public class CucumberPageRunnerTest {
     @Test
     public void shouldOpenPasswordUpdatePage() {
         //given
-        String newPassword = "@Brasil2011";
+        String newPassword = "@Rapha1978";
+        String currentPassword = "@Rapha1977";
 
         //when
-        test.changeEmailOrPassword(newPassword, "@Brasil2010");
-//        System.out.println("VALOR DO CAMPO OLD PASSWORD: " + driver.findElement(By.id("user_current_password")).getText());
+        test.changeEmailOrPassword(newPassword, currentPassword);
 
         //then
-        Assert.assertEquals(newPassword, driver.findElement(By.id("user_current_password")).getText());
-
-        //TODO create new google account and sig up for cucumber for the first time m.aricotagc@gmail.com
-
+        Assert.assertEquals("https://studio.cucumber.io/profile", driver.getCurrentUrl());
+        System.out.println("THE END");
     }
 }

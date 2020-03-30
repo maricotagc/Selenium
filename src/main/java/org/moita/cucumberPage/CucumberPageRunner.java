@@ -78,4 +78,6 @@ public class CucumberPageRunner {
         WebElement updateUserButton = cucumberPageElements.updateUserButton();
         updateUserButton.click();
     }
+
+    //TODO create new login method trhough cucumber credentials
 }
