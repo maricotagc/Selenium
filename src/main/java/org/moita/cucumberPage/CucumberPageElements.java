@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 
 public class CucumberPageElements {
 
-    private static final String PAGE = "https://cucumber.io/docs";
+    private static final String PAGE = "https://cucumber.io";
     private WebDriver driver;
 
     public CucumberPageElements(WebDriver driver) {
