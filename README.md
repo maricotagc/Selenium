@@ -26,7 +26,7 @@ It is an API which emulates browsers using the Selenium server. Each browser has
 2. [Clicking on an element](/codeExamples/Click.java)
 3. [Navigation to URL](/codeExamples/Navigation.java)
 4. [Other Examples](https://www.selenium.dev/documentation/en/webdriver/browser_manipulation/)
-5. [Expect Conditions -Explicit](https://www.selenium.dev/selenium/docs/api/java/org/openqa/selenium/support/ui/ExpectedConditions.html): They allow your code to halt program execution, or freeze the thread, until the condition you pass it is resolved.
+5. [Expect Conditions -Explicit](/codeExamples/ExplicityWait.java): They allow your code to halt program execution, or freeze the thread, until the condition you pass it is resolved.
 6. [Expect Conditions -Implicit](/codeExamples/ImplicityWait.java)
 7. [Keyboard Actions](https://www.selenium.dev/documentation/en/webdriver/keyboard/)
 8. [Reading Element's Value](/codeExamples/ReadElementValue.java)
