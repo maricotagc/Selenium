@@ -32,3 +32,8 @@ It is an API which emulates browsers using the Selenium server. Each browser has
 8. [Reading Element's Value](/codeExamples/ReadElementValue.java)
 9. [Other Examples](https://www.selenium.dev/documentation/en/webdriver/browser_manipulation/)
 
+### JavaScriptExecutor
+
+Used when Selenium Webdriver fails do click on any element due to some issue.
+[Code Example](/codeExamples/JavaScriptExecutor.java)
+
