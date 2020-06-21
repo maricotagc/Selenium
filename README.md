@@ -35,5 +35,6 @@ It is an API which emulates browsers using the Selenium server. Each browser has
 ### JavaScriptExecutor
 
 Used when Selenium Webdriver fails do click on any element due to some issue.
+
 [Code Example](/codeExamples/JavaScriptExecutor.java)
 
