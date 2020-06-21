@@ -20,6 +20,8 @@ It is an API which emulates browsers using the Selenium server. Each browser has
 ### Locators
 ![](/images/locators1.jpg)
 
+[XPATH Examples](/codeExamples/XpathExamples.java)
+
 ### Frequent Actions
 
 1. [Navigation to URL](/codeExamples/Navigation.java)
