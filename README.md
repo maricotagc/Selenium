@@ -24,6 +24,8 @@ It is an API which emulates browsers using the Selenium server. Each browser has
 
 * Syntax: //tag[@attribute='value']
 * Wild card: //*[@id='navbar']
+* Single slash: looks for element immediately inside the parent element
+* Double slash: look for any child or nested element inside the parent element
 * Dev Tools console: $x(".//*[@id='leftColumn']/div[1]/div[1]/div[1]/div[1]/article/div[1]/span");
 * [XPATH Examples](/codeExamples/XpathExamples.java)
 
