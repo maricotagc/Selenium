@@ -20,13 +20,12 @@ It is an API which emulates browsers using the Selenium server. Each browser has
 ### Locators
 ![](/images/locators1.jpg)
 
-Xpath Syntax: //tag[@attribute='value']
+#### XPATH
 
-
-In this example, any tag with id navbar will be matched: //*[@id='navbar'] 
-
-
-[XPATH Examples](/codeExamples/XpathExamples.java)
+* Syntax: //tag[@attribute='value']
+* Wild card: //*[@id='navbar']
+* Dev Tools console: $x(".//*[@id='leftColumn']/div[1]/div[1]/div[1]/div[1]/article/div[1]/span");
+* [XPATH Examples](/codeExamples/XpathExamples.java)
 
 ### Frequent Actions
 
