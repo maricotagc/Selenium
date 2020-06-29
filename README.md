@@ -23,6 +23,9 @@ It is an API which emulates browsers using the Selenium server. Each browser has
 Xpath Syntax: //tag[@attribute='value']
 
 
+In this example, any tag with id navbar will be matched: //*[@id='navbar'] 
+
+
 [XPATH Examples](/codeExamples/XpathExamples.java)
 
 ### Frequent Actions
