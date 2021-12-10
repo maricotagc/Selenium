@@ -10,7 +10,7 @@ My notes regarding Selenium framework which automates web browser testing.
 ## Webdriver
 
 It is an API which emulates browsers using the Selenium server. Each browser has its own driver (Chrome, FireFox, Safari, etc).
-* [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/)
+* [ChromeDriver](https://sites.google.com/chromium.org/driver/)
 * [WebDriver Official Documentation](https://www.w3.org/TR/webdriver1/)
 
 ### Declaration
