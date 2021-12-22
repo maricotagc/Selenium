@@ -35,7 +35,7 @@ It is an API which emulates browsers using the Selenium server. Each browser has
 2. [Maximize browser](/codeExamples/MaximizeBrowser.java)
 3. [Set an element’s text](/codeExamples/SetElementText.java)
 4. [Clicking on an element](/codeExamples/Click.java)
-5. [Explicit Wait](/codeExamples/ExplicityWait.java): They allow your code to halt program execution, or freeze the thread, until the condition you pass it is resolved.
+5. [Explicit Wait](/codeExamples/ExplicityWait.java): [Explanation in video](https://www.youtube.com/watch?v=UN8cauyoZsk)
 6. [Implicit Wait](/codeExamples/ImplicityWait.java)
 7. [Keyboard Actions](https://www.selenium.dev/documentation/en/webdriver/keyboard/)
 8. [Reading Element's Value](/codeExamples/ReadElementValue.java)
