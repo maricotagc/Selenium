@@ -22,7 +22,12 @@ It is an API which emulates browsers using the Selenium server. Each browser has
 1. Class Name - Sintax: driver.findElement(By.className(“classValue”))
 * DOM Structure: < button id="login-button" data-amplitude="" type="submit" ***class="btn btn-dark submit-btn"*** css="1">Login< / button>
 * driver.findElement(By.className("submit-btn"));
+
 2. CSS Selector - Sintax: driver.findElement(By.cssSelector(“cssValue”))
+* Syntax: css=(Html tag )(#) (value of the ID attribute)
+  * DOM Structure: < ***input*** type="password" name="password" placeholder="Desired Password*" required="required" ***id="userpassword"*** minlength="8" class="form-control " aria-autocomplete="list" xpath="1" >
+  * The desired WebElement was located using the CSS locator in Selenium: driver.findElement(By.cssSelector("input#userpassword"))
+
 3. Id - Sintax: driver.findElement(By.id(“IdValue”))
 ![Id Example](https://github.com/maricotagc/Selenium/blob/master/images/id.jpg)
 4. Name - it may or may not have a unique value. If there are WebElements with the same name, the locator selects the first element with that Name on the page. Sintax: driver.findElement(By.name(“nameValue”)) 
