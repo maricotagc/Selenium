@@ -18,7 +18,7 @@ It is an API which emulates browsers using the Selenium server. Each browser has
 
 # Possible Locators for WebElements
 
-## 1. Class Name
+## 1. Class Name - used by unique class names
   * DOM: < button id="login-button" data-amplitude="" type="submit" ***class="btn btn-dark submit-btn"*** css="1">Login< / button>
   * WebElement is located by: driver.findElement(By.***className("submit-btn")***);
 
