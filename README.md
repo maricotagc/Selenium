@@ -19,14 +19,14 @@ It is an API which emulates browsers using the Selenium server. Each browser has
 
 ### Possible Locators
 
-1. Class Name
-2. CSS Selector
-3. Id
-4. Name
-5. Link Text
-6. Partial Link text
-7. Tag Name
-8. XPath
+1. Class Name - Example: driver.findElement(By.className(“classValue”))
+2. CSS Selector - Example: driver.findElement(By.cssSelector(“cssValue”))
+3. Id - Example: driver.findElement(By.id(“IdValue”))
+4. Name - Example: driver.findElement(By.name(“nameValue”))
+5. Link Text - Example: driver.findElement(By.linkText(“textofLink”))
+6. Partial Link text - Example: driver.findElement(By.partialLinkText(“PartialTextofLink”)) 
+7. Tag Name - Example: driver.findElement(By.tagName(“htmlTag”))
+8. XPath - Example: driver.findElement(By.xpath(“xpathValue”))
 
 #### XPATH
 
