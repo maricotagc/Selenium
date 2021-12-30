@@ -49,6 +49,12 @@ It is an API which emulates browsers using the Selenium server. Each browser has
 * Syntax: //tagname[contains(@attribute, ‘partial value of attribute’)]
 - DOM Structure: < ***input*** type="text" placeholder="Full Name*" name="name" value="" ***class="form-control sign-up-input-2*** " >
 - The desired WebElement was located using the Xpath Contains locator in Selenium: driver.findElement(By.xpath("//input[contains(@class, ‘form-control’)]"))
+10. XPath using ‘AND’ & ‘OR’: used when locating a WebElement based on certain condition sets. 
+* Syntax of OR: //input[@id='login_1' OR @name='login’]
+* Syntax of AND: //input[@id='login_1' AND @name='login’] 
+  * DOM Structure: < input ***type="email" name="email"*** value="" placeholder="Email" required="required" autofocus="autofocus" class="form-control mt-3 form-control-lg" >
+  * The desired WebElement was located using the Xpath AND locator in Selenium: driver.findElement(By.xpath("//input[@type='email' AND @name='email']"
+
 ### Tricks
 * Wild card: //*[@id='navbar']
 * Single slash: looks for element immediately inside the parent element
