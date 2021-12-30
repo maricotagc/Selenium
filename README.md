@@ -71,10 +71,26 @@ It is an API which emulates browsers using the Selenium server. Each browser has
 11. Xpath Text: used when elements have to be located by looking into the tags containing certain text.
 * Syntax: //div[text()='Logged In']
   * DOM Structure: < button class="btn btn-dark submit-btn g-recaptcha">Free Sign Up < /button >
-  * The desired WebElement was located using the Xpath Text locator in Selenium: driver.findElement(By.xpath("//button[text()='Free Sign Up']"))
+  * The desired WebElement is located using the Xpath Text locator in Selenium: driver.findElement(By.xpath("//button[text()='Free Sign Up']"))
 
 ### Tricks
-* Wild card: //*[@id='navbar']
+* Wild (*, ^ and $) in CSS for classes
+  *  Starts-With
+  *  Syntax: css=(HTML tag)([attribute^=start of the string])
+  *  DOM: < input type="email" ***name="email"*** value="" placeholder="Email" required="required" autofocus="autofocus" class="form-control mt-3 form-control-lg" >
+  *  The desired WebElement is located using: driver.findElement(By.cssSelector("input[name ***^='em'***]"));
+
+  *  Ends-With
+  *  Syntax: css=(HTML tag)([attribute$=end of the string])
+  *  DOM: < input type="email" ***name="email"*** value="" placeholder="Email" required="required" autofocus="autofocus" class="form-control mt-3 form-control-lg" >
+  *  The desired WebElement is located using: driver.findElement(By.cssSelector("input[name ***$='ail'***]"));
+
+
+  *  Contains
+  *  Syntax: css=(HTML tag)([attribute*=partial string])
+  *  DOM: < ***input*** type="email" name="email" value="" placeholder="Email" required="required" autofocus="autofocus" ***class="form-control mt-3 form-control-lg"*** >
+  *  The desired WebElement is located using: driver.findElement(By.cssSelector("input[***class*='control'***]"));
+  
 * Single slash: looks for element immediately inside the parent element
 * Double slash: look for any child or nested element inside the parent element
 * Dev Tools console: $x(".//*[@id='leftColumn']/div[1]/div[1]/div[1]/div[1]/article/div[1]/span");
