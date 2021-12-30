@@ -20,7 +20,8 @@ It is an API which emulates browsers using the Selenium server. Each browser has
 ### Possible Locators
 
 1. Class Name - Sintax: driver.findElement(By.className(“classValue”))
-![ClassName Example](https://github.com/maricotagc/Selenium/blob/master/images/className.png)
+* DOM Structure: < button id="login-button" data-amplitude="" type="submit" ***class="btn btn-dark submit-btn"*** css="1">Login< / button>
+* driver.findElement(By.className("submit-btn"));
 2. CSS Selector - Sintax: driver.findElement(By.cssSelector(“cssValue”))
 3. Id - Sintax: driver.findElement(By.id(“IdValue”))
 ![Id Example](https://github.com/maricotagc/Selenium/blob/master/images/id.jpg)
