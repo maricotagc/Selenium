@@ -38,15 +38,15 @@ It is an API which emulates browsers using the Selenium server. Each browser has
 * The desired WebElement was located using the linkText locator in Selenium: driver.findElement(By.partialLinkText ("***Simulator***"));
 7. Tag Name - Sintax: driver.findElement(By.tagName(“htmlTag”))
 8. XPath - Sintax: driver.findElement(By.xpath(“xpathValue”))
+* Syntax: //tagname[@attribute = 'value']
+  * TagName (attribute) can be input tag, anchor tag, id tag, Name tag, class tag, etc.
+* [XPATH Examples](/codeExamples/XpathExamples.java)
 
-#### XPATH
-
-* Syntax: //tag[@attribute='value']
+### Tricks
 * Wild card: //*[@id='navbar']
 * Single slash: looks for element immediately inside the parent element
 * Double slash: look for any child or nested element inside the parent element
 * Dev Tools console: $x(".//*[@id='leftColumn']/div[1]/div[1]/div[1]/div[1]/article/div[1]/span");
-* [XPATH Examples](/codeExamples/XpathExamples.java)
 
 ### Frequent Actions
 
