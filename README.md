@@ -25,7 +25,12 @@ It is an API which emulates browsers using the Selenium server. Each browser has
 ![Id Example](https://github.com/maricotagc/Selenium/blob/master/images/id.jpg)
 4. Name - it may or may not have a unique value. If there are WebElements with the same name, the locator selects the first element with that Name on the page. Sintax: driver.findElement(By.name(“nameValue”)) 
 ![Name Example](https://github.com/maricotagc/Selenium/blob/master/images/name.jpg)
-5. Link Text - can only be used for elements that have an anchor(a) tag. Sintax: driver.findElement(By.linkText(“textofLink”))
+5. Link Text - can only be used for elements that have an anchor(a) tag. Sintax: driver.findElement(By.linkText(“textofLink”)).
+![Link Text](https://github.com/maricotagc/Selenium/blob/master/images/linkText.jpg)
+
+Below is the DOM structure of the same: <a href="https://www.lambdatest.com/automation-testing" class="desktop:block  desktop:ml-0 desktop:mt-10 nav-link inline-block py-5 text-size-14 font-medium ml-30 fromipad:ml-20 ">Automation</a>
+Here is how the desired WebElement was located using the linkText locator in Selenium: driver.findElement(By.linkText("Automation"));
+
 6. Partial Link text - Sintax: driver.findElement(By.partialLinkText(“PartialTextofLink”)) 
 7. Tag Name - Sintax: driver.findElement(By.tagName(“htmlTag”))
 8. XPath - Sintax: driver.findElement(By.xpath(“xpathValue”))
