@@ -24,10 +24,18 @@ It is an API which emulates browsers using the Selenium server. Each browser has
 * driver.findElement(By.className("submit-btn"));
 
 2. CSS Selector - Sintax: driver.findElement(By.cssSelector(“cssValue”))
-* Syntax: css=(Html tag )(#) (value of the ID attribute)
+* Syntax by ID: css=(Html tag )(#) (value of the ID attribute)
   * DOM Structure: < ***input*** type="password" name="password" placeholder="Desired Password*" required="required" ***id="userpassword"*** minlength="8" class="form-control " aria-autocomplete="list" xpath="1" >
   * The desired WebElement was located using the CSS locator in Selenium: driver.findElement(By.cssSelector("input#userpassword"))
 
+* Syntax by Tag and Attribute: css=(HTML Page)[Attribute=Value]
+  * DOM Structure: <***input*** type="phone" placeholder="Phone*" ***name="phone"*** value="" class="form-control sign-up-input-2 ">
+  * The desired WebElement was located using the CSS locator in Selenium: driver.findElement(By.cssSelector("input[name=\"phone\"]"))
+
+* Syntax by Tag, Class, and Attribute: css=(HTML tag>)(. )(Class attribute value)([attribute=Value of attribute])
+  * DOM Structure: < ***button*** data-sitekey="6LceAqQaAAAAAO0LcIgLnXy3gH_M3X5aDrqUihHw" ***data-callback="onSubmit"*** data-amplitude="R_signup" type="submit" ***class="btn btn-dark submit-btn g-recaptcha"*** css="1">Free Sign Up < /button >
+  * The desired WebElement was located using the CSS locator in Selenium: driver.findElement(By.cssSelector("button.submit-btn[data-callback=\"onSubmit\"]"));
+  
 3. Id - Sintax: driver.findElement(By.id(“IdValue”))
 ![Id Example](https://github.com/maricotagc/Selenium/blob/master/images/id.jpg)
 4. Name - it may or may not have a unique value. If there are WebElements with the same name, the locator selects the first element with that Name on the page. Sintax: driver.findElement(By.name(“nameValue”)) 
