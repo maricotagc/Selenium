@@ -19,15 +19,15 @@ It is an API which emulates browsers using the Selenium server. Each browser has
 
 ### Possible Locators
 
-1. Class Name - Example: driver.findElement(By.className(“classValue”))
-2. CSS Selector - Example: driver.findElement(By.cssSelector(“cssValue”))
-3. Id - Example: driver.findElement(By.id(“IdValue”))
+1. Class Name - Sintax: driver.findElement(By.className(“classValue”))
+2. CSS Selector - Sintax: driver.findElement(By.cssSelector(“cssValue”))
+3. Id - Sintax: driver.findElement(By.id(“IdValue”))
 ![Id Example](https://github.com/maricotagc/Selenium/blob/master/images/id.jpg)
-4. Name - Example: driver.findElement(By.name(“nameValue”))
-5. Link Text - Example: driver.findElement(By.linkText(“textofLink”))
-6. Partial Link text - Example: driver.findElement(By.partialLinkText(“PartialTextofLink”)) 
-7. Tag Name - Example: driver.findElement(By.tagName(“htmlTag”))
-8. XPath - Example: driver.findElement(By.xpath(“xpathValue”))
+4. Name - it may or may not have a unique value. If there are WebElements with the same name, the locator selects the first element with that Name on the page. Sintax: driver.findElement(By.name(“nameValue”))
+5. Link Text - Sintax: driver.findElement(By.linkText(“textofLink”))
+6. Partial Link text - Sintax: driver.findElement(By.partialLinkText(“PartialTextofLink”)) 
+7. Tag Name - Sintax: driver.findElement(By.tagName(“htmlTag”))
+8. XPath - Sintax: driver.findElement(By.xpath(“xpathValue”))
 
 #### XPATH
 
