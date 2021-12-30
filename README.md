@@ -55,6 +55,11 @@ It is an API which emulates browsers using the Selenium server. Each browser has
   * DOM Structure: < input ***type="email" name="email"*** value="" placeholder="Email" required="required" autofocus="autofocus" class="form-control mt-3 form-control-lg" >
   * The desired WebElement was located using the Xpath AND locator in Selenium: driver.findElement(By.xpath("//input[@type='email' AND @name='email']"
 
+11. Xpath Text: used when elements have to be located by looking into the tags containing certain text.
+* Syntax: //div[text()='Logged In']
+  * DOM Structure: < button class="btn btn-dark submit-btn g-recaptcha">Free Sign Up < /button >
+  * The desired WebElement was located using the Xpath Text locator in Selenium: driver.findElement(By.xpath("//button[text()='Free Sign Up']"))
+
 ### Tricks
 * Wild card: //*[@id='navbar']
 * Single slash: looks for element immediately inside the parent element
