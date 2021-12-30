@@ -20,6 +20,7 @@ It is an API which emulates browsers using the Selenium server. Each browser has
 ### Possible Locators
 
 1. Class Name - Sintax: driver.findElement(By.className(“classValue”))
+![ClassName Example](https://github.com/maricotagc/Selenium/blob/master/images/className.png)
 2. CSS Selector - Sintax: driver.findElement(By.cssSelector(“cssValue”))
 3. Id - Sintax: driver.findElement(By.id(“IdValue”))
 ![Id Example](https://github.com/maricotagc/Selenium/blob/master/images/id.jpg)
@@ -34,7 +35,6 @@ It is an API which emulates browsers using the Selenium server. Each browser has
 * DOM structure of the element: 
 < a href="https://www.lambdatest.com/test-on-ios-devices">***Test on iOS Simulator*** < /a>
 * The desired WebElement was located using the linkText locator in Selenium: driver.findElement(By.partialLinkText ("***Simulator***"));
-
 7. Tag Name - Sintax: driver.findElement(By.tagName(“htmlTag”))
 8. XPath - Sintax: driver.findElement(By.xpath(“xpathValue”))
 
