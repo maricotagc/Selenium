@@ -22,6 +22,7 @@ It is an API which emulates browsers using the Selenium server. Each browser has
 1. Class Name - Example: driver.findElement(By.className(“classValue”))
 2. CSS Selector - Example: driver.findElement(By.cssSelector(“cssValue”))
 3. Id - Example: driver.findElement(By.id(“IdValue”))
+![Id Example](https://github.com/maricotagc/Selenium/blob/master/images/id.jpg)
 4. Name - Example: driver.findElement(By.name(“nameValue”))
 5. Link Text - Example: driver.findElement(By.linkText(“textofLink”))
 6. Partial Link text - Example: driver.findElement(By.partialLinkText(“PartialTextofLink”)) 
