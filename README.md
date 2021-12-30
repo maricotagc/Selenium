@@ -40,7 +40,11 @@ It is an API which emulates browsers using the Selenium server. Each browser has
 8. XPath - Sintax: driver.findElement(By.xpath(“xpathValue”))
 * Syntax: //tagname[@attribute = 'value']
   * TagName (attribute) can be input tag, anchor tag, id tag, Name tag, class tag, etc.
-* [XPATH Examples](/codeExamples/XpathExamples.java)
+  * [XPATH Examples](/codeExamples/XpathExamples.java)
+
+![Xpath Example 1](https://github.com/maricotagc/Selenium/blob/master/images/xpath1.png)
+- DOM structure: < ***input*** type="email" ***name="email"*** value="" placeholder="Email" required="required" autofocus="autofocus" class="form-control mt-3 form-control-lg" >
+- The desired WebElement was located using the Xpath locator in Selenium: driver.findElement(By.xpath("//input[@name= ’email’]"));
 
 ### Tricks
 * Wild card: //*[@id='navbar']
