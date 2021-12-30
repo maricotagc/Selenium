@@ -28,8 +28,11 @@ It is an API which emulates browsers using the Selenium server. Each browser has
 5. Link Text - can only be used for elements that have an anchor(a) tag. Sintax: driver.findElement(By.linkText(“textofLink”)).
 ![Link Text](https://github.com/maricotagc/Selenium/blob/master/images/linkText.png)
 
-Below is the DOM structure of the same: <a href="https://www.lambdatest.com/automation-testing" class="desktop:block  desktop:ml-0 desktop:mt-10 nav-link inline-block py-5 text-size-14 font-medium ml-30 fromipad:ml-20 ">Automation</a>
-Here is how the desired WebElement was located using the linkText locator in Selenium: driver.findElement(By.linkText("Automation"));
+DOM structure of the same: 
+
+< a href="https://www.lambdatest.com/automation-testing" class="desktop:block  desktop:ml-0 desktop:mt-10 nav-link inline-block py-5 text-size-14 font-medium ml-30 fromipad:ml-20 "> ***Automation*** < / a>
+
+The desired WebElement was located using the linkText locator in Selenium: driver.findElement(By.linkText("***Automation***"));
 
 6. Partial Link text - Sintax: driver.findElement(By.partialLinkText(“PartialTextofLink”)) 
 7. Tag Name - Sintax: driver.findElement(By.tagName(“htmlTag”))
