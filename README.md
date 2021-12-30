@@ -45,7 +45,10 @@ It is an API which emulates browsers using the Selenium server. Each browser has
 ![Xpath Example 1](https://github.com/maricotagc/Selenium/blob/master/images/xpath1.png)
 - DOM structure: < ***input*** type="email" ***name="email"*** value="" placeholder="Email" required="required" autofocus="autofocus" class="form-control mt-3 form-control-lg" >
 - The desired WebElement was located using the Xpath locator in Selenium: driver.findElement(By.xpath("//input[@name= ’email’]"));
-
+9. XPath Contains: used on WebElements whose value is changing dynamically
+* Syntax: //tagname[contains(@attribute, ‘partial value of attribute’)]
+- DOM Structure: < ***input*** type="text" placeholder="Full Name*" name="name" value="" ***class="form-control sign-up-input-2*** " >
+- The desired WebElement was located using the Xpath Contains locator in Selenium: driver.findElement(By.xpath("//input[contains(@class, ‘form-control’)]"))
 ### Tricks
 * Wild card: //*[@id='navbar']
 * Single slash: looks for element immediately inside the parent element
