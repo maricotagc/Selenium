@@ -16,6 +16,24 @@ It is an API which emulates browsers using the Selenium server. Each browser has
 
 [Code Example](/codeExamples/WebdriverDeclaration.java)
 
+# Frequent Actions
+
+1. [Navigation to URL](/codeExamples/Navigation.java)
+2. [Maximize browser](/codeExamples/MaximizeBrowser.java)
+3. [Set an element’s text](/codeExamples/SetElementText.java)
+4. [Clicking on an element](/codeExamples/Click.java)
+5. [Explicit Wait](/codeExamples/ExplicityWait.java) [Explanation in video](https://www.youtube.com/watch?v=UN8cauyoZsk) used for specific elements/conditions (ex.: until clickable).It comprehends only specific element.
+6. [Implicit Wait](/codeExamples/ImplicityWait.java) [Explanation in video](https://www.youtube.com/watch?v=UN8cauyoZsk) used to define a period of time until the webdriver throws "No Such Element" exception. It comprehends the entire session.
+7. [Keyboard Actions](https://www.selenium.dev/documentation/en/webdriver/keyboard/)
+8. [Reading Element's Value](/codeExamples/ReadElementValue.java)
+9. [Other Examples](https://www.selenium.dev/documentation/en/webdriver/browser_manipulation/)
+
+# JavaScriptExecutor
+
+Used when Selenium Webdriver fails do click on any element due to some issue.
+
+[Code Example](/codeExamples/JavaScriptExecutor.java)
+
 # Possible Locators for WebElements
 
 ## 1. Class Name - used by unique class names
@@ -102,21 +120,14 @@ autofocus="autofocus" class="form-control " xpath="1" >
 ### Single slash: looks for element immediately inside the parent element
 ### Double slash: look for any child or nested element inside the parent element
 
-# Frequent Actions
+## HTML Elements
+  * Finding elements in Chrome Dev Tools Console:
+    *  By ID: document.getElementById("example");
+    *  By TagName: document.getElementsByTagName("example");
+    *  By Class Name: document.getElementsByClassName("example");
+    *  By CSS Selector: document.querySelectorAll("p.intro");
 
-1. [Navigation to URL](/codeExamples/Navigation.java)
-2. [Maximize browser](/codeExamples/MaximizeBrowser.java)
-3. [Set an element’s text](/codeExamples/SetElementText.java)
-4. [Clicking on an element](/codeExamples/Click.java)
-5. [Explicit Wait](/codeExamples/ExplicityWait.java) [Explanation in video](https://www.youtube.com/watch?v=UN8cauyoZsk) used for specific elements/conditions (ex.: until clickable).It comprehends only specific element.
-6. [Implicit Wait](/codeExamples/ImplicityWait.java) [Explanation in video](https://www.youtube.com/watch?v=UN8cauyoZsk) used to define a period of time until the webdriver throws "No Such Element" exception. It comprehends the entire session.
-7. [Keyboard Actions](https://www.selenium.dev/documentation/en/webdriver/keyboard/)
-8. [Reading Element's Value](/codeExamples/ReadElementValue.java)
-9. [Other Examples](https://www.selenium.dev/documentation/en/webdriver/browser_manipulation/)
+  * [For more details check W3 Schools](https://www.w3schools.com/js/js_htmldom_document.asp)
 
-# JavaScriptExecutor
 
-Used when Selenium Webdriver fails do click on any element due to some issue.
-
-[Code Example](/codeExamples/JavaScriptExecutor.java)
 
