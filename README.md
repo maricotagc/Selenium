@@ -9,8 +9,10 @@
 # Webdriver
 
 It is an API which emulates browsers using the Selenium server. Each browser has its own driver (Chrome, FireFox, Safari, etc).
-* [ChromeDriver](https://sites.google.com/chromium.org/driver/)
-* [WebDriver Official Documentation](https://www.w3.org/TR/webdriver1/)
+
+[ChromeDriver](https://sites.google.com/chromium.org/driver/)
+
+[WebDriver Official Documentation](https://www.w3.org/TR/webdriver1/)
 
 # Declaration
 
@@ -120,14 +122,13 @@ autofocus="autofocus" class="form-control " xpath="1" >
 ### Single slash: looks for element immediately inside the parent element
 ### Double slash: look for any child or nested element inside the parent element
 
-## HTML Elements
+## HTML Elements [W3 Schools](https://www.w3schools.com/js/js_htmldom_document.asp)
   * Finding elements in Chrome Dev Tools Console:
     *  By ID: document.getElementById("example");
     *  By TagName: document.getElementsByTagName("example");
     *  By Class Name: document.getElementsByClassName("example");
     *  By CSS Selector: document.querySelectorAll("p.intro");
 
-  * [For more details check W3 Schools](https://www.w3schools.com/js/js_htmldom_document.asp)
 
 
 
