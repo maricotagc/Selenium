@@ -14,14 +14,14 @@ public class DriverFactory {
         //Java select up which receives create to be used within the test and it's location
         System.setProperty(WEBDRIVER_CHROME_DRIVER,WEBDRIVER_CHROME_DRIVER_PATH);
 
-        //Selenium select up for executing test in specific browser language
+        //Declaration of browser language
         ChromeOptions options = new ChromeOptions();
         options.addArguments(LANG_EN);
 
-        //Instance of the create test will use in every action
+        //Declaration of new driver (Chrome) instance which will be used in every test
         WebDriver driver = new ChromeDriver(options);
 
-        //Set up of create in order to start test runner
+        //Set up of wait and window maximization
         driver.manage().timeouts().implicitlyWait(TIMEOUT, TimeUnit.SECONDS);
         driver.manage().window().maximize();
 
