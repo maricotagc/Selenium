@@ -18,6 +18,9 @@ public class DriverFactory {
         //Instance of the create test will use in every action
         WebDriver driver = new ChromeDriver(options);
 
+        //Windows minimization
+        driver.manage().window().minimize();
+        
         //Windows maximization and timeout
         driver.manage().timeouts().implicitlyWait(TIMEOUT, TimeUnit.SECONDS);
         driver.manage().window().maximize();
