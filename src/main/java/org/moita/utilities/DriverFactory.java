@@ -11,7 +11,7 @@ import static org.moita.utilities.Config.*;
 public class DriverFactory {
 
     public static WebDriver create() {
-        //Java select up which receives create to be used within the test and it's location
+        //Key-value pointing in memory where driver is located
         System.setProperty(WEBDRIVER_CHROME_DRIVER,WEBDRIVER_CHROME_DRIVER_PATH);
 
         //Declaration of browser language
